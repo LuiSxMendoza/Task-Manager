@@ -1,0 +1,17 @@
+{
+    "name": "juan-luis/up-task_mvc",
+    "description": "Proyecto de UpTask MVC, PHP 8, SASS",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        } 
+    },
+    "require": {
+        "sendgrid/sendgrid": "~7",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

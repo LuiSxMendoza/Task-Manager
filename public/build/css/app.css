@@ -1,0 +1,1885 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+[class$=__contenedor] {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .contenedor2 {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4.4rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1b15;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.pagina .titulo {
+  padding: 3rem 0;
+  font-size: 5.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(to right, #d81074 0%, #f68bc1 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (min-width: 768px) {
+  .pagina .titulo {
+    font-size: 8rem;
+    padding-top: 7rem;
+  }
+}
+.pagina .descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .pagina .descripcion {
+    font-size: 2.5rem;
+  }
+}
+
+.instrucciones__descripcion {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .instrucciones__descripcion {
+    margin-bottom: 5rem;
+  }
+}
+.instrucciones .acciones {
+  font-family: "Alex Brush", cursive;
+  font-weight: 900;
+  color: #1a1b15;
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.instrucciones .acciones span {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  color: #d81074;
+}
+@media (min-width: 768px) {
+  .instrucciones .acciones {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.instrucciones .acciones a {
+  margin-bottom: 2.8rem;
+}
+.instrucciones .acciones a:last-of-type {
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  .instrucciones .acciones a {
+    margin-bottom: 0;
+  }
+}
+
+.formulario {
+  width: 100%;
+}
+.formulario__campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.formulario__campo label {
+  margin-bottom: 0.7rem;
+  font-weight: 900;
+}
+.formulario__campo input {
+  padding: 1rem;
+  background-color: #e9e9e9;
+  color: #1a1b15;
+  border: none;
+  border-left: 5px solid #1a1b15;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .formulario__campo.perfil label {
+    min-width: 14rem;
+  }
+}
+@media (min-width: 1024px) {
+  .formulario__campo {
+    flex-direction: row;
+    align-items: center;
+  }
+  .formulario__campo label {
+    flex: 0 0 10rem;
+    margin-bottom: 0;
+  }
+  .formulario__campo input {
+    flex: 1;
+  }
+}
+.formulario__boton {
+  background-color: #d81074;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  min-width: 100%;
+}
+.formulario__boton:hover {
+  cursor: pointer;
+  background-color: #ee1481;
+}
+@media (min-width: 768px) {
+  .formulario__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .formulario__boton {
+    max-width: 25rem;
+  }
+}
+@media (min-width: 768px) {
+  .formulario__boton {
+    min-width: 18rem;
+  }
+}
+
+.alerta {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1rem;
+  font-weight: 900;
+}
+.alerta.error {
+  border-left: 6px solid #990000;
+  background-color: #ff4d4d;
+}
+.alerta.error:last-of-type {
+  margin-bottom: 0;
+}
+.alerta.exito {
+  border-left: 6px solid #069706;
+  background-color: #57f857;
+}
+.alerta.exito:last-of-type {
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .pagina {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+.pagina .footer {
+  margin-top: auto;
+}
+
+.registrar .titulo {
+  padding: 3rem 0;
+  font-size: 5.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(to right, #9932CC 0%, #d6aceb 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (min-width: 768px) {
+  .registrar .titulo {
+    font-size: 8rem;
+    padding-top: 7rem;
+  }
+}
+.registrar .acciones {
+  font-family: "Alex Brush", cursive;
+  font-weight: 900;
+  color: #1a1b15;
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.registrar .acciones span {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  color: #9932CC;
+}
+@media (min-width: 768px) {
+  .registrar .acciones {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.registrar .acciones a {
+  margin-bottom: 2.8rem;
+}
+.registrar .acciones a:last-of-type {
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  .registrar .acciones a {
+    margin-bottom: 0;
+  }
+}
+.registrar .formulario__boton {
+  background-color: #9932CC;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+}
+.registrar .formulario__boton:hover {
+  cursor: pointer;
+  background-color: #a346d2;
+}
+@media (min-width: 768px) {
+  .registrar .formulario__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .registrar .formulario__boton {
+    max-width: 25rem;
+  }
+}
+
+.descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .descripcion {
+    font-size: 2.5rem;
+  }
+}
+
+.olvide .titulo {
+  padding: 3rem 0;
+  font-size: 5.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(to right, #ff0000 0%, #ff9999 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (min-width: 768px) {
+  .olvide .titulo {
+    font-size: 8rem;
+    padding-top: 7rem;
+  }
+}
+.olvide .acciones {
+  font-family: "Alex Brush", cursive;
+  font-weight: 900;
+  color: #1a1b15;
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.olvide .acciones span {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  color: #ff0000;
+}
+@media (min-width: 768px) {
+  .olvide .acciones {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.olvide .acciones a {
+  margin-bottom: 2.8rem;
+}
+.olvide .acciones a:last-of-type {
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  .olvide .acciones a {
+    margin-bottom: 0;
+  }
+}
+.olvide .formulario__boton {
+  background-color: #ff0000;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+}
+.olvide .formulario__boton:hover {
+  cursor: pointer;
+  background-color: #ff1a1a;
+}
+@media (min-width: 768px) {
+  .olvide .formulario__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .olvide .formulario__boton {
+    max-width: 25rem;
+  }
+}
+
+.recuperar .titulo {
+  padding: 3rem 0;
+  font-size: 5.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(to right, #0da6f3 0%, #9fdcfa 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (min-width: 768px) {
+  .recuperar .titulo {
+    font-size: 8rem;
+    padding-top: 7rem;
+  }
+}
+.recuperar .formulario__boton {
+  background-color: #0da6f3;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  min-width: 100%;
+  margin: 0;
+}
+.recuperar .formulario__boton:hover {
+  cursor: pointer;
+  background-color: #25aff4;
+}
+@media (min-width: 768px) {
+  .recuperar .formulario__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .recuperar .formulario__boton {
+    max-width: 25rem;
+  }
+}
+@media (min-width: 768px) {
+  .recuperar .formulario__boton {
+    min-width: 18rem;
+  }
+}
+.recuperar .opciones-recupera {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .recuperar .opciones-recupera {
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .descripcion {
+    font-size: 2.5rem;
+  }
+}
+
+.mensaje .titulo {
+  padding: 3rem 0;
+  font-size: 5.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(to right, #394659 0%, #7e91ad 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (min-width: 768px) {
+  .mensaje .titulo {
+    font-size: 8rem;
+    padding-top: 7rem;
+  }
+}
+.mensaje .instrucciones__descripcion {
+  color: #0da6f3;
+}
+.mensaje .formulario__boton {
+  background-color: #394659;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+}
+.mensaje .formulario__boton:hover {
+  cursor: pointer;
+  background-color: #435269;
+}
+@media (min-width: 768px) {
+  .mensaje .formulario__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .mensaje .formulario__boton {
+    max-width: 25rem;
+  }
+}
+
+.confirma .titulo {
+  padding: 3rem 0;
+  font-size: 5.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(to right, #b03060 0%, #e397b3 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (min-width: 768px) {
+  .confirma .titulo {
+    font-size: 8rem;
+    padding-top: 7rem;
+  }
+}
+.confirma .instrucciones__descripcion {
+  color: #b03060;
+}
+.confirma .formulario__boton {
+  background-color: #b03060;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+}
+.confirma .formulario__boton:hover {
+  cursor: pointer;
+  background-color: #c4356b;
+}
+@media (min-width: 768px) {
+  .confirma .formulario__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .confirma .formulario__boton {
+    max-width: 25rem;
+  }
+}
+
+.barrahead {
+  padding: 2rem 0;
+  margin: 0 0 2rem 0;
+}
+@media (min-width: 768px) {
+  .barrahead {
+    padding: 1.3rem 0;
+    height: 7.5rem;
+    border-bottom: 1px solid #1a1b15;
+    box-shadow: 0px 4px 26px 1px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+  }
+}
+.barra__nombre {
+  font-weight: 900;
+  color: #FFFFFF;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(57, 70, 89, 0.582);
+}
+@media (min-width: 768px) {
+  .barra__nombre {
+    margin-bottom: 0;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+}
+.barra__nombre:hover {
+  cursor: no-drop;
+}
+.barra__nombre p {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.barra__boton {
+  transition: 1s ease all;
+  padding: 1rem;
+  background-color: rgba(57, 70, 89, 0.582);
+}
+@media (min-width: 768px) {
+  .barra__boton {
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+.barra__boton:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .barra__boton:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+.barra__boton a {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #394659;
+  padding: 4rem 0 2rem 0;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    height: 100vh;
+  }
+}
+.sidebar__nombre {
+  font-size: 6rem;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 0 3.5rem 0;
+}
+@media (min-width: 768px) {
+  .sidebar__nombre {
+    padding: 0 1rem;
+  }
+}
+.sidebar__navegacion {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+@media (min-width: 768px) {
+  .sidebar__navegacion {
+    padding: 1rem 1rem;
+  }
+}
+@media (min-width: 1800px) {
+  .sidebar__navegacion {
+    padding: 7rem 2rem 0 3rem;
+  }
+}
+.sidebar__navegacion a {
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  transition: all ease-in 400ms;
+  border-radius: 0.5rem;
+}
+.sidebar__navegacion a:hover, .sidebar__navegacion a.activo {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  .sidebar__navegacion a {
+    text-align: justify;
+    padding: 1rem;
+    margin-bottom: 2.2rem;
+  }
+}
+.sidebar .logo {
+  padding: 1rem 0;
+}
+
+.footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0 1rem 0;
+  margin-top: auto;
+}
+.footer__titulo {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1a1b15;
+  font-weight: 800;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+.footer__redes .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer__redes .redes__svg img {
+  width: 4rem;
+}
+.footer__redes .redes__icono img {
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+  -webkit-animation: 4s ease-in-out infinite float;
+          animation: 4s ease-in-out infinite float;
+}
+.footer__redes .redes__icono img:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-13px);
+            transform: translateY(-13px);
+  }
+  50% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  75% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-13px);
+            transform: translateY(-13px);
+  }
+  50% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  75% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@media (min-width: 768px) {
+  .dashboard {
+    height: 100vh;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 5fr;
+  }
+}
+.dashboard .principal1 {
+  overflow: scroll;
+}
+.dashboard .principal1 .contenido {
+  height: 88%;
+}
+@media (min-width: 768px) {
+  .dashboard .principal1 .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .dashboard .principal1 .contenido__nombre {
+    text-transform: uppercase;
+    padding: 3rem 0 1rem 0;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.dashboard .formulario {
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .dashboard .formulario__campo label {
+    flex: 0 0 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .dashboard .formulario__campo label {
+    flex: 0 0 10rem;
+  }
+}
+
+.principal__tareas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .principal__tareas {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.principal__vacio {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #ff8c00;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  font-weight: 900;
+}
+@media (min-width: 768px) {
+  .principal__vacio {
+    font-size: 3.5rem;
+  }
+}
+.principal__boton {
+  background-color: #d81074;
+  font-size: 2rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.principal__boton:hover {
+  cursor: pointer;
+  background-color: #ee1481;
+}
+@media (min-width: 768px) {
+  .principal__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .principal__boton {
+    max-width: 17rem;
+  }
+}
+.principal__lista {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto;
+  padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .principal__lista {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  .principal__lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.principal__lista a {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .principal__lista a {
+    font-size: 2rem;
+  }
+}
+.principal__proyecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  background-color: #394659;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  transition: all ease-out 900ms;
+  border: 1px solid #1a1b15;
+}
+@media (min-width: 768px) {
+  .principal__proyecto {
+    min-height: 14rem;
+  }
+}
+.principal__proyecto:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.9) rotate(1deg);
+          transform: scale(0.9) rotate(1deg);
+  background-color: black;
+}
+
+.principal__tareas {
+  margin: 1.5rem 0 2rem 0;
+}
+.principal__boton-tareas {
+  background-color: #d81074;
+  font-size: 2rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 0.5rem;
+}
+.principal__boton-tareas:hover {
+  cursor: pointer;
+  background-color: #ee1481;
+}
+@media (min-width: 768px) {
+  .principal__boton-tareas {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .principal__boton-tareas {
+    min-width: 18rem;
+  }
+}
+.principal__boton-eliminar {
+  background-color: #990000;
+  font-size: 2rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 0.5rem;
+}
+.principal__boton-eliminar:hover {
+  cursor: pointer;
+  background-color: #b30000;
+}
+@media (min-width: 768px) {
+  .principal__boton-eliminar {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .principal__boton-eliminar {
+    min-width: 18rem;
+  }
+}
+.principal .listado-tareas {
+  list-style: none;
+  margin-top: 2rem;
+}
+.principal .listado-tareas .no-tareas {
+  text-align: center;
+  font-size: 2.6rem;
+  padding: 4rem 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #ff8c00;
+}
+@media (min-width: 1024px) {
+  .principal .listado-tareas .no-tareas {
+    font-size: 3.5rem;
+  }
+}
+.principal .listado-tareas .tarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #1a1b15;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .principal .listado-tareas .tarea {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.principal .listado-tareas .tarea p {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.principal .listado-tareas .opciones {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.principal .listado-tareas .opciones button {
+  border: none;
+  background-color: unset;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  transition: all ease-in-out 300ms;
+}
+.principal .listado-tareas .opciones button:hover {
+  cursor: pointer;
+}
+.principal .listado-tareas .opciones .estado-tarea {
+  color: #FFFFFF;
+  min-width: 10.5rem;
+  font-weight: 900;
+}
+.principal .listado-tareas .opciones .pendiente {
+  background-color: #ff8c00;
+}
+.principal .listado-tareas .opciones .pendiente:hover {
+  background-color: #d67600;
+}
+.principal .listado-tareas .opciones .completado {
+  background-color: #069706;
+}
+.principal .listado-tareas .opciones .completado:hover {
+  background-color: #047004;
+}
+.principal .listado-tareas .opciones .eliminar-tarea {
+  background-color: #990000;
+  color: #FFFFFF;
+  font-weight: 900;
+  min-width: 10.5rem;
+}
+.principal .listado-tareas .opciones .eliminar-tarea:hover {
+  background-color: #700000;
+}
+
+.modal {
+  padding: 0 1rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media (min-width: 768px) {
+  .modal {
+    padding: 0;
+  }
+}
+.modal .formulario {
+  max-width: 80rem;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  padding: 2rem;
+  margin: 0 auto;
+  -webkit-transform: translateY(-30rem);
+          transform: translateY(-30rem);
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+}
+.modal .formulario legend {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: block;
+}
+.modal .formulario .campo-mod {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.modal .formulario .campo-mod label {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.modal .formulario .campo-mod input {
+  font-weight: 900;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 2rem;
+  background-color: #e1e1e1;
+}
+.modal .formulario .opciones {
+  display: flex;
+  justify-content: center;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+}
+.modal .formulario .submit-nueva-tarea {
+  background-color: #069706;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 1px;
+}
+.modal .formulario .submit-nueva-tarea:hover {
+  cursor: pointer;
+  background-color: #07b007;
+}
+@media (min-width: 768px) {
+  .modal .formulario .submit-nueva-tarea {
+    width: auto;
+  }
+}
+.modal .formulario .cerrar-modal {
+  background-color: #990000;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 1px;
+}
+.modal .formulario .cerrar-modal:hover {
+  cursor: pointer;
+  background-color: #b30000;
+}
+@media (min-width: 768px) {
+  .modal .formulario .cerrar-modal {
+    width: auto;
+  }
+}
+.modal .formulario.animar {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 1;
+}
+.modal .formulario.cerrar {
+  -webkit-transform: translateY(-30rem);
+          transform: translateY(-30rem);
+  opacity: 0;
+}
+.modal .formulario .alerta {
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.filtros {
+  padding: 1.2rem;
+  background-color: rgba(57, 70, 89, 0.582);
+  border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .filtros {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+}
+.filtros__inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.filtros__titulo {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .filtros__titulo {
+    margin-bottom: 0;
+  }
+}
+.filtros .campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .filtros .campo {
+    flex-direction: row;
+  }
+}
+.filtros .campo label {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .filtros .campo label {
+    margin-right: 0.3rem;
+  }
+}
+
+.boton-pswrd {
+  background-color: #990000;
+  font-size: 2rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.boton-pswrd:hover {
+  cursor: pointer;
+  background-color: #b30000;
+}
+@media (min-width: 768px) {
+  .boton-pswrd {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .boton-pswrd {
+    max-width: 20rem;
+    margin-left: auto;
+  }
+}
+
+.boton-form {
+  background-color: #d81074;
+  font-size: 2rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+.boton-form:hover {
+  cursor: pointer;
+  background-color: #ee1481;
+}
+@media (min-width: 768px) {
+  .boton-form {
+    width: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #696969;
+  }
+
+  .pagina .descripcion {
+    color: #e1e1e1;
+  }
+  .pagina .alerta.error {
+    color: #e1e1e1;
+    background-color: #640202;
+  }
+  .pagina .alerta.exito {
+    color: #e1e1e1;
+    background-color: #015001;
+  }
+  .pagina.olvide .formulario__boton {
+    color: #e1e1e1;
+    background-color: #830000;
+  }
+  .pagina.olvide .acciones span {
+    color: #830000;
+  }
+  .pagina.login .formulario__boton {
+    color: #e1e1e1;
+    background-color: #85174e;
+  }
+  .pagina.login .acciones span {
+    color: #85174e;
+  }
+  .pagina.registrar .formulario__boton {
+    color: #e1e1e1;
+    background-color: #450f61;
+  }
+  .pagina.registrar .acciones span {
+    color: #450f61;
+  }
+  .pagina.mensaje .instrucciones__descripcion {
+    color: #045177;
+  }
+  .pagina.mensaje .formulario__boton {
+    color: #e1e1e1;
+    background-color: #212b3b;
+  }
+  .pagina.confirma .formulario__boton {
+    color: #e1e1e1;
+    background-color: #85174e;
+  }
+  .pagina.recuperar .formulario__boton {
+    color: #e1e1e1;
+    background-color: #044566;
+  }
+
+  .instrucciones__descripcion {
+    color: #e1e1e1;
+  }
+  .instrucciones .acciones a {
+    color: #e1e1e1;
+  }
+
+  .footer__titulo {
+    color: #e1e1e1;
+  }
+
+  .formulario__campo label {
+    color: #e1e1e1;
+  }
+
+  .dashboard .sidebar__nombre {
+    color: #e1e1e1;
+  }
+  .dashboard .sidebar__enlaces {
+    color: #e1e1e1;
+  }
+  .dashboard .principal1 .contenido__nombre {
+    color: #e1e1e1;
+  }
+  .dashboard .principal1 .barra__nombre {
+    color: #e1e1e1;
+    background-color: #22314794;
+  }
+  .dashboard .principal1 .barra__boton {
+    background-color: #22314794;
+  }
+  .dashboard .principal1 .barra__boton a {
+    color: #e1e1e1;
+  }
+  .dashboard .principal1 .boton-form {
+    color: #e1e1e1;
+    background-color: #85174e;
+  }
+  .dashboard .principal__proyecto {
+    color: #e1e1e1;
+  }
+  .dashboard .principal__boton-tareas {
+    color: #e1e1e1;
+    background-color: #85174e;
+  }
+  .dashboard .principal__boton-eliminar {
+    color: #e1e1e1;
+    background-color: #640202;
+  }
+  .dashboard .principal .listado-tareas .tarea-nombre {
+    color: #e1e1e1;
+  }
+  .dashboard .principal .listado-tareas .opciones .estado-tarea {
+    color: #e1e1e1;
+  }
+  .dashboard .principal .listado-tareas .opciones .completado {
+    background-color: #013d01;
+  }
+  .dashboard .principal .listado-tareas .opciones .pendiente {
+    background-color: #683a02;
+  }
+  .dashboard .principal .listado-tareas .opciones .eliminar-tarea {
+    color: #e1e1e1;
+    background-color: #640202;
+  }
+  .dashboard .principal .boton-pswrd {
+    color: #e1e1e1;
+    background-color: #640202;
+  }
+  .dashboard .principal .principal__boton {
+    color: #e1e1e1;
+    background-color: #85174e;
+  }
+  .dashboard .principal .alerta.error {
+    color: #e1e1e1;
+    background-color: #640202;
+  }
+  .dashboard .principal .alerta.exito {
+    color: #e1e1e1;
+    background-color: #015001;
+  }
+
+  .modal .formulario {
+    background-color: #696969;
+  }
+  .modal .formulario legend {
+    color: #e1e1e1;
+  }
+  .modal .formulario .campo-mod label {
+    color: #e1e1e1;
+  }
+  .modal .formulario .opciones .submit-nueva-tarea {
+    color: #e1e1e1;
+    background-color: #013d01;
+  }
+  .modal .formulario .opciones .cerrar-modal {
+    color: #e1e1e1;
+    background-color: #640202;
+  }
+}
+/*# sourceMappingURL=app.css.map */
