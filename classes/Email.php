@@ -25,11 +25,13 @@ class Email {
 
         $email->addContent(
             "text/html", 
-            "<p> <strong> Hola " . $this->nombre . " </strong> 
-                Has creado tu cuenta en UpTask, solo debes confirmarla haciendo
-                clic en el siguiente enlace:
+            "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
+                    <strong>  
+                        Has creado tu cuenta en UpTask, solo debes confirmarla haciendo
+                        clic en el siguiente enlace:
+                    </strong> 
             </p>" .
-            "<p> Presiona aquí: <a href='http://localhost:3000/confirma?token=" 
+            "<p> Presiona aquí: <a href='" . $_ENV['APP_URL'] . "/confirma?token=" 
                 . $this->token . "'> Confirmar Cuenta </a> </p>" .
             "<p> Si tu no solicitaste esta cuenta puedes ignorar este mensaje </p>" . 
             "<p> ¿Necesitas Ayuda? <a href='https://api.whatsapp.com/send?phone=+7292628462&text=Necesito%20ayuda%20para%20recuperar%20mi%20cuenta'> Contactar a Soporte </a> </p>" 
@@ -56,11 +58,13 @@ class Email {
 
         $email->addContent(
             "text/html", 
-            "<p> <strong> Hola " . $this->nombre . " </strong> 
-                Si tu solicitaste cambiar tu contraseña de UpTask puedes hacerlo haciendo
-                clic en el siguiente enlace:
+            "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
+                    <strong>  
+                        Si tu solicitaste cambiar tu contraseña de UpTask puedes hacerlo haciendo
+                        clic en el siguiente enlace:
+                    </strong> 
             </p>" .
-            "<p> Presiona aquí: <a href='http://localhost:3000/recuperar?token=" 
+            "<p> Presiona aquí: <a href='" . $_ENV['APP_URL'] . "/recuperar?token=" 
                 . $this->token . "'> Cambiar contraseña </a> </p>" .
             "<p> Si tu no solicitaste esta cambio puedes ignorar este mensaje </p>" . 
             "<p> ¿Necesitas Ayuda? <a href='https://api.whatsapp.com/send?phone=+7292628462&text=Necesito%20ayuda%20para%20recuperar%20mi%20cuenta'> Contactar a Soporte </a> </p>" 
@@ -87,11 +91,13 @@ class Email {
 
         $email->addContent(
             "text/html", 
-            "<p> <strong> Hola " . $this->nombre . " </strong> 
-                Has actualizado tus datos en UpTask, solo debes confirmarlos haciendo
-                clic en el siguiente enlace:
+            "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
+                    <strong>
+                        Has actualizado tus datos en UpTask, solo debes confirmarlos haciendo
+                        clic en el siguiente enlace:
+                    </strong> 
             </p>" .
-            "<p> Presiona aquí: <a href='http://localhost:3000/confirma?token=" 
+            "<p> Presiona aquí: <a href='" . $_ENV['APP_URL'] . "/confirma?token=" 
                 . $this->token . "'> Confirmar Actualización </a> </p>" .
             "<p> Estos cambios se hicieron desde tu perfil, si no los confirmas perderas el acceso a tu cuenta. </p>" . 
             "<p> ¿Necesitas Ayuda? <a href='https://api.whatsapp.com/send?phone=+7292628462&text=Necesito%20ayuda%20para%20recuperar%20mi%20cuenta'> Contactar a Soporte </a> </p>" 
@@ -118,8 +124,10 @@ class Email {
 
         $email->addContent(
             "text/html", 
-            "<p> <strong> Hola " . $this->nombre . " </strong> 
-                Has actualizado tu Contraseña en UpTask.
+            "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
+                    <strong>  
+                        Has actualizado tu Contraseña en UpTask.
+                    </strong>
             </p>" .
             "<p> Si no reconoces estos cambios alguien corrompio tu cuenta. </p>" . 
             "<p> ¿Necesitas Ayuda? <a href='https://api.whatsapp.com/send?phone=+7292628462&text=Necesito%20ayuda%20para%20recuperar%20mi%20cuenta'> Contactar a Soporte </a> </p>" 
@@ -146,8 +154,10 @@ class Email {
 
         $email->addContent(
             "text/html", 
-            "<p> <strong> Hola " . $this->nombre . ", </strong> 
-                Felicidades! has confirmado tu cuenta de UpTask.
+            "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
+                    <strong>
+                        Felicidades! has confirmado tu cuenta de UpTask.
+                    </strong> 
             </p>" .
             "<p> Ahora tienes acceso a todas las funciones de la App Web. </p>" . 
             "<p> ¿Necesitas Ayuda? <a href='https://api.whatsapp.com/send?phone=+7292628462&text=Necesito%20ayuda%20para%20recuperar%20mi%20cuenta'> Contactar a Soporte </a> </p>" 

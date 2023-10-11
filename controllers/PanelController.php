@@ -149,6 +149,7 @@ class PanelController {
            if (empty($alertas)) {
                 //? Comprobar E-Mail
                 $existeUsuario = Usuario::where('email', $usuario->email);
+                //debuguear($usuario);
 
                 if ($existeUsuario && $existeUsuario->id !== $usuario->id) {
                     //? Mensaje de error
