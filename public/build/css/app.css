@@ -486,6 +486,38 @@ p {
   }
 }
 
+.webp .auth-bg {
+  background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .webp .auth-bg {
+    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.not-webp .auth-bg {
+  background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .not-webp .auth-bg {
+    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.auth-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .formulario {
   width: 100%;
 }

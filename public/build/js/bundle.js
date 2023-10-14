@@ -1,4 +1,16 @@
+//? Titulo barra dimamico
 
+function flashTitleNot() {
+    var origTitle = document.title;
+    var isFlash = false;
+    function changeTitle() {
+        document.title = isFlash ?
+        "(1) ¡Bienvenido A Mi Sitio Web!" : origTitle;
+        isFlash = !isFlash;
+    }
+    setInterval(changeTitle, 2500);
+}
+window.onload = flashTitleNot;
 (function (document) {
     var checkCount = 0,
       formatFound = false;

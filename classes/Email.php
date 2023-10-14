@@ -19,15 +19,15 @@ class Email {
 
     public function enviarInstruccionesConfirmacion() {
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("juanluis123ar@gmail.com", "UpTask");
+        $email->setFrom("juanluis123ar@gmail.com", "Task Manager");
         $email->setSubject("Confirma tu cuenta");
-        $email->addTo($this->email, 'Cuentas UpTask');
+        $email->addTo($this->email, 'Cuentas Task Manager');
 
         $email->addContent(
             "text/html", 
             "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
                     <strong>  
-                        Has creado tu cuenta en UpTask, solo debes confirmarla haciendo
+                        Has creado tu cuenta en Task Manager, solo debes confirmarla haciendo
                         clic en el siguiente enlace:
                     </strong> 
             </p>" .
@@ -52,15 +52,15 @@ class Email {
 
     public function enviarInstruccionesContraseña() {
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("juanluis123ar@gmail.com", "UpTask");
+        $email->setFrom("juanluis123ar@gmail.com", "Task Manager");
         $email->setSubject("Cambia tu contraseña");
-        $email->addTo($this->email, 'Cuentas UpTask');
+        $email->addTo($this->email, 'Cuentas Task Manager');
 
         $email->addContent(
             "text/html", 
             "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
                     <strong>  
-                        Si tu solicitaste cambiar tu contraseña de UpTask puedes hacerlo haciendo
+                        Si tu solicitaste cambiar tu contraseña de Task Manager puedes hacerlo haciendo
                         clic en el siguiente enlace:
                     </strong> 
             </p>" .
@@ -85,15 +85,15 @@ class Email {
 
     public function enviarActualizaciónDatos() {
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("juanluis123ar@gmail.com", "UpTask");
+        $email->setFrom("juanluis123ar@gmail.com", "Task Manager");
         $email->setSubject("Actualizaste tus Datos");
-        $email->addTo($this->email, 'Cuentas UpTask');
+        $email->addTo($this->email, 'Cuentas Task Manager');
 
         $email->addContent(
             "text/html", 
             "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
                     <strong>
-                        Has actualizado tus datos en UpTask, solo debes confirmarlos haciendo
+                        Has actualizado tus datos en Task Manager, solo debes confirmarlos haciendo
                         clic en el siguiente enlace:
                     </strong> 
             </p>" .
@@ -118,7 +118,7 @@ class Email {
 
     public function enviarNotificaciónContraseña() {
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("juanluis123ar@gmail.com", "UpTask");
+        $email->setFrom("juanluis123ar@gmail.com", "Task Manager");
         $email->setSubject("Actualizaste tu Contraseña");
         $email->addTo($this->email, 'Cuentas UpTask');
 
@@ -126,7 +126,7 @@ class Email {
             "text/html", 
             "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
                     <strong>  
-                        Has actualizado tu Contraseña en UpTask.
+                        Has actualizado tu Contraseña en Task Manager.
                     </strong>
             </p>" .
             "<p> Si no reconoces estos cambios alguien corrompio tu cuenta. </p>" . 
@@ -148,15 +148,15 @@ class Email {
 
     public function enviarNotificaciónConfirmado() {
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("juanluis123ar@gmail.com", "UpTask");
+        $email->setFrom("juanluis123ar@gmail.com", "Task Manager");
         $email->setSubject("Confirmaste tu Cuenta");
-        $email->addTo($this->email, 'Cuentas UpTask');
+        $email->addTo($this->email, 'Cuentas Task Manager');
 
         $email->addContent(
             "text/html", 
             "<p> <h1> ¡Hola " . $this->nombre . "! </h1>
                     <strong>
-                        Felicidades! has confirmado tu cuenta de UpTask.
+                        Felicidades! has confirmado tu cuenta de Task Manager.
                     </strong> 
             </p>" .
             "<p> Ahora tienes acceso a todas las funciones de la App Web. </p>" . 

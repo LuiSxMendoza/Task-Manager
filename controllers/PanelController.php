@@ -144,16 +144,16 @@ class PanelController {
             $usuario->sincronizar($_POST);
 
             //? Validar
-            $alertas = $usuario->validarPerfil();           
+            $alertas = $usuario->validarPerfil();
 
-           if (empty($alertas)) {
-                //? Comprobar E-Mail
-                $existeUsuario = Usuario::where('email', $usuario->email);
-                //debuguear($usuario);
+            if (empty($alertas)) {
+            //? Comprobar E-Mail
+            $existeUsuario = Usuario::where('email', $usuario->email);
+            //debuguear($_POST);
 
-                if ($existeUsuario && $existeUsuario->id !== $usuario->id) {
-                    //? Mensaje de error
-                    Proyecto::setAlerta('error', 'Email ya Registrado');
+            if ($existeUsuario && $existeUsuario->id !== $usuario->id) {
+                //? Mensaje de error
+                Proyecto::setAlerta('error', 'Email ya Registrado');
                 } else {
                     //! Guardar Registro
                     //? Crear token
@@ -174,7 +174,6 @@ class PanelController {
                 }
             }
         }
-        
         //! Mostrar alertas
         $alertas = Usuario::getAlertas();
 

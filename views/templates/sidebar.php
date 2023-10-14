@@ -1,5 +1,5 @@
 <div class="sidebar">
-    <h2 class="sidebar__nombre">UpTask</h2>
+    <h2 class="sidebar__nombre">Task Manager</h2>
 
     <nav class="sidebar__navegacion">
         <a href="/index" class="sidebar__enlaces <?php echo ($titulo === 'Proyectos') ? 'activo' : ''; ?>">
