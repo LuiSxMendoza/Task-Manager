@@ -4,7 +4,21 @@
 
 <div class="principal principal__contenedor">
 
-    <?php include_once __DIR__ . '/../templates/alertas.php'; ?>
+    <?php foreach ( $alertas as $key => $mensajes ):
+            foreach($mensajes as $mensaje):
+    ?>
+            <div class="alerta <?php echo $key; ?>">
+                <?php echo $mensaje; 
+                    $page = '/index';
+                    //debuguear($_SERVER);
+                    $sec = "5";
+                    header("Refresh: $sec; url=$page");
+                ?>
+            </div>
+    <?php
+            endforeach; 
+        endforeach;
+    ?>
     
     <form action="/crear-proyecto" class="formulario" method="POST">
         <?php include_once __DIR__ . '/../templates/formulario.php'; ?>

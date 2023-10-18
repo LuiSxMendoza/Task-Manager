@@ -6,11 +6,26 @@
 
         <div class="instrucciones contenedor2">
 
-        <?php include_once __DIR__ . '/../templates/alertas.php'?>
+            <p class="instrucciones__descripcion">¡Confirmaste tu Cuenta!</p>
 
-            <p class="instrucciones__descripcion">¡Cuenta Confirmada Exitosamente!</p>
+            <?php foreach ( $alertas as $key => $mensajes ):
+                    foreach($mensajes as $mensaje):
+            ?>
+                    <div class="alerta <?php echo $key; ?>">
+                        <?php 
+                            echo $mensaje; 
+                            $page = $_SERVER['REQUEST_URI'];
+                            //debuguear($_SERVER);
+                            $sec = "15";
+                            header("Refresh: $sec; url=$page");
+                        ?>
+                    </div>
+            <?php
+                    endforeach; 
+                endforeach;
+            ?>
 
-            <a href="/" class="formulario__boton">Ir a Login</a>
+            <a href="/" class="formulario__boton">Ir a Inicio</a>
             
         </div>
 

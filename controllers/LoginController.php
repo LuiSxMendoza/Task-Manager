@@ -241,18 +241,15 @@ class LoginController {
         $alertas = Usuario::getAlertas();
 
         $router->render('auth/confirma', [
-            'titulo' => 'Confirma Cuenta de UpTask',
+            'titulo' => 'Cuenta Confirmada',
             'alertas' => $alertas
         ]);
     }
 
     public static function mensaje(Router $router) {
 
-        $alertas = [];
-
         $router->render('auth/mensaje', [
-            'titulo' => 'Cuenta Creada Correctamente',
-            'alertas' => $alertas
+            'titulo' => 'Cuenta Creada',
         ]);
     }
 }

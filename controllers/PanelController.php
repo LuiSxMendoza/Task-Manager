@@ -38,7 +38,7 @@ class PanelController {
 
         //? Validar usuario
         $usuario = Usuario::find($_SESSION['id']);
-
+        //debuguear($_SERVER);
 
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             $proyecto = new Proyecto($_POST);
