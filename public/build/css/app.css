@@ -500,13 +500,13 @@ p {
 }
 
 .not-webp .auth-bg {
-  background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.webp");
+  background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .not-webp .auth-bg {
-    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.webp");
+    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bg-task.jgp");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1772,6 +1772,34 @@ p {
     background-color: #696969;
   }
 
+  .webp .auth-bg {
+    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bk-drk.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 768px) {
+  .webp .auth-bg {
+    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bk-drk.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .not-webp .auth-bg {
+    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bk-drk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 768px) {
+  .not-webp .auth-bg {
+    background-image: linear-gradient(rgba(57, 70, 89, 0) 0%, rgba(57, 70, 89, 0) 100%), url("../img/bk-drk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (prefers-color-scheme: dark) {
   .pagina .descripcion {
     color: #e1e1e1;
   }
@@ -1819,22 +1847,26 @@ p {
     color: #e1e1e1;
     background-color: #044566;
   }
-
+}
+@media (prefers-color-scheme: dark) {
   .instrucciones__descripcion {
     color: #e1e1e1;
   }
   .instrucciones .acciones a {
     color: #e1e1e1;
   }
-
+}
+@media (prefers-color-scheme: dark) {
   .footer__titulo {
     color: #e1e1e1;
   }
-
+}
+@media (prefers-color-scheme: dark) {
   .formulario__campo label {
     color: #e1e1e1;
   }
-
+}
+@media (prefers-color-scheme: dark) {
   .dashboard .sidebar__nombre {
     color: #e1e1e1;
   }
@@ -1901,7 +1933,8 @@ p {
     color: #e1e1e1;
     background-color: #015001;
   }
-
+}
+@media (prefers-color-scheme: dark) {
   .modal .formulario {
     background-color: #696969;
   }
