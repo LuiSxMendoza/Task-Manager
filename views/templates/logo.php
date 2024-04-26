@@ -1,3 +1,3 @@
 <div class="logo">
-    <img src="/../build/img/Recurso 9.svg" alt="logo">
+    <img src="/../build/img/logo-lm.svg" alt="logo">
 </div>

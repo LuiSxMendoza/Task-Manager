@@ -7,7 +7,7 @@
     <meta name="author" content="Juan Luis Martinez Mendoza">    
     <title>Task Manager - <?php echo $titulo ?? ''; ?></title>
 
-    <link rel="icon" href="build/img/Recurso4x.png">
+    <link rel="icon" href="build/img/logo-lm.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

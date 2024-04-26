@@ -10,20 +10,29 @@
 
     <form action="/upd-pswrd" class="formulario" method="POST">
         <div class="formulario__campo perfil">
-            <label for="password_actual">Contraseña Actual</label>
+            <label for="password_actual">Contraseña:</label>
             <input 
                 type="password"
                 name="password_actual"   
-                placeholder="Ingresa Tu Contraseña Actual" 
+                placeholder="Ingresa tu contraseña Actual" 
             >
         </div>
 
         <div class="formulario__campo perfil">
-            <label for="password_nuevo">Nueva Contraseña</label>
+            <label for="password_nuevo">Nueva Contraseña:</label>
             <input 
                 type="password"
                 name="password_nuevo"   
-                placeholder="Crea Tu Nueva Contraseña" 
+                placeholder="Crea tu nueva Contraseña" 
+            >
+        </div>
+
+        <div class="formulario__campo perfil">
+            <label for="password_repite">Repite Contraseña:</label>
+            <input 
+                type="password"
+                name="password_repite"   
+                placeholder="Repite tu nueva Contraseña" 
             >
         </div>
 

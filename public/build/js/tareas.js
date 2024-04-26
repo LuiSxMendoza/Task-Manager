@@ -121,7 +121,7 @@
             const contTareas = document.querySelector('#listado-tareas');
 
             const textoNoTareas = document.createElement('LI');
-            textoNoTareas.textContent = 'No Hay Tareas Para Mostrar :(';
+            textoNoTareas.textContent = 'No Hay Tareas Para Mostrar, Añade Una!';
             textoNoTareas.classList.add('no-tareas');
 
             contTareas.appendChild(textoNoTareas);

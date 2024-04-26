@@ -10,7 +10,7 @@
 
     <form action="/perfil" class="formulario" method="POST">
         <div class="formulario__campo">
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Nombre:</label>
             <input 
                 type="text"
                 value="<?php echo $usuario->nombre ?>"
@@ -20,7 +20,7 @@
         </div>
 
         <div class="formulario__campo">
-            <label for="email">Correo</label>
+            <label for="email">Correo:</label>
             <input 
                 type="email"
                 value="<?php echo $usuario->email ?>"

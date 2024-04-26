@@ -9,9 +9,9 @@
     ?>
             <div class="alerta <?php echo $key; ?>">
                 <?php echo $mensaje; 
-                    $page = '/index';
+                    $page = '/crear-proyecto';
                     //debuguear($_SERVER);
-                    $sec = "5";
+                    $sec = "3";
                     header("Refresh: $sec; url=$page");
                 ?>
             </div>

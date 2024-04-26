@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer__contenedor">
 
-    <h3 class="footer__titulo hidden">All Rights Reserved Copyright © 2023 - LuiSxMendoza</h3>
+        <h3 class="footer__titulo hidden">All Rights Reserved Copyright © 2023 - LuiSxMendoza</h3>
         
         <div class="footer__redes">
             <ul class="redes">

@@ -4,7 +4,7 @@
 
 <div class="principal principal__contenedor">
     <?php  if(count($proyectos) === 0 ) { ?>
-        <p class="principal__vacio">No Hay Proyectos Aún :(</p>
+        <p class="principal__vacio">No Hay Proyectos Aún!</p>
         <a href="/crear-proyecto" class="principal__boton">Empieza Ahora</a>
     <?php } else { ?>
         <ul class="principal__lista">
